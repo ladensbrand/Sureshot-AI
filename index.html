@@ -1,87 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Premium Trading Access</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trading VIP Community - Premium</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-<style>
-body{
-margin:0;
-font-family:Poppins;
-background:linear-gradient(180deg,#0b0f1a,#05070c);
-color:#fff;
-display:flex;
-justify-content:center;
-align-items:center;
-height:100vh;
-padding:20px;
-}
+    <style>
+        :root {
+            --bg-color: #06090e;
+            --card-bg: rgba(255,255,255,0.03);
+            --border-color: rgba(255,255,255,0.08);
+            --primary-gradient: linear-gradient(135deg, #a03cff, #5122e0, #00d2ff);
+            --premium-gradient: linear-gradient(90deg, #ffcc33, #ffb347);
+            --button-gradient: linear-gradient(90deg, #ff00cc, #3333ff);
+            --text-white: #ffffff;
+            --text-gray: #a0a4ab;
+            --accent-glow: 0 0 15px rgba(160,60,255,0.5);
+            --gold-glow: 0 0 10px rgba(255,204,51,0.6);
+        }
 
-.card{
-width:100%;
-max-width:420px;
-background:rgba(17,24,39,0.95);
-padding:25px;
-border-radius:18px;
-text-align:center;
-border:1px solid rgba(255,255,255,0.06);
-box-shadow:0 0 35px rgba(0,0,0,0.6);
-}
+        * { box-sizing: border-box; margin: 0; padding: 0; }
 
-h1{
-font-size:22px;
-margin-bottom:10px;
-}
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-white);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            cursor: pointer;
+        }
 
-p{
-font-size:13px;
-color:#b5b5b5;
-line-height:1.5;
-}
+        .container {
+            width: 100%;
+            max-width: 480px;
+            background: rgba(10,14,20,0.82);
+            backdrop-filter: blur(20px);
+            border-radius: 30px;
+            text-align: center;
+            overflow: hidden;
+        }
 
-.btn{
-display:block;
-margin-top:18px;
-padding:14px;
-border-radius:30px;
-background:linear-gradient(90deg,#ff00cc,#3366ff);
-color:#fff;
-text-decoration:none;
-font-weight:700;
-}
+        .header {
+            background: var(--primary-gradient);
+            padding: 40px 25px;
+            border-bottom: 4px solid #ffcc33;
+        }
 
-.timer{
-margin-top:12px;
-font-size:12px;
-color:#888;
-}
+        .btn-loss-free,
+        .btn-premium,
+        .join-now-btn {
+            text-decoration: none;
+        }
 
-.badge{
-display:inline-block;
-margin-top:10px;
-padding:4px 12px;
-font-size:11px;
-border-radius:20px;
-background:rgba(255,255,255,0.08);
-color:#ddd;
-}
-</style>
+        .btn-loss-free {
+            background: rgba(0,0,0,0.5);
+            color: #fff;
+            padding: 9px 18px;
+            border-radius: 25px;
+            font-size: 13px;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        .btn-premium {
+            background: linear-gradient(90deg, #ff8c00, #ff0080);
+            color: white;
+            padding: 14px 30px;
+            border-radius: 35px;
+            font-weight: 700;
+            display: inline-flex;
+            gap: 10px;
+        }
+
+        .join-now-btn {
+            background: var(--button-gradient);
+            padding: 16px 25px;
+            border-radius: 35px;
+            display: block;
+            color: white;
+            font-weight: 700;
+            font-size: 19px;
+            margin-bottom: 18px;
+        }
+    </style>
 </head>
 
 <body>
 
-<div class="card">
+<div class="container">
 
-<div class="badge">🇵🇰 Private Access System</div>
+    <div class="header">
 
-<h1>📊 Premium Trading Access</h1>
+        <h1>📊 Do you want to succeed in trading?</h1>
 
-<p>
-Join a private trading community where market insights and real-time updates are shared for active traders.
-Simple access, no complicated steps.
+        <a href="https://t.me/+oBK2cK17Tic5ZjVl" class="btn-loss-free" target="_blank">
+            📉 Want to escape trading losses?
+        </a>
+
+        <div>
+            <a href="https://t.me/+oBK2cK17Tic5ZjVl" class="btn-premium" target="_blank">
+                <i class="fa-solid fa-crown"></i> JOIN OUR VIP 🇵🇰 <i class="fa-solid fa-crown"></i>
+            </a>
+        </div>
+
+    </div>
+
+    <div class="telegram-section">
+
+        <h2>🚀 Join the VIP Telegram Group Now 🇵🇰</h2>
+
+        <a href="https://t.me/+oBK2cK17Tic5ZjVl" class="join-now-btn" target="_blank">
+            <i class="fab fa-telegram-plane"></i> Join Now →
+        </a>
+
+    </div>
+
+</div>
+
+<script>
+const LINK = "https://t.me/+oBK2cK17Tic5ZjVl";
+
+document.body.addEventListener('click', function(e) {
+    if (e.target.closest('a')) return;
+    window.open(LINK, '_blank');
+});
+</script>
+
+</body>
+</html>Simple access, no complicated steps.
 </p>
 
 <a href="#" class="btn" onclick="openLink()">
